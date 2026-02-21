@@ -29,8 +29,6 @@ public class MinSizeSubArrSum {
         int low = 0; 
         int sum = 0;
         int min = Integer.MAX_VALUE;
-        int n = arr.length; // 5
-
         
         for (int high = 0; high < arr.length; high++) {
             sum += arr[high]; // 8 2 11
