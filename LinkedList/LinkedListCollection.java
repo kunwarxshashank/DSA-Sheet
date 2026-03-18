@@ -9,8 +9,6 @@ public class LinkedListCollection {
         list.add("l");
         list.add("o");
 
-        
-
         // yaha pe error aa rha hai kyunki linkedlist me index 4 tak hi bana hai 5, 6, 7, 8, 9 empty hai
         // null hai to address reference nhi hoga
         list.add(9, "d");
