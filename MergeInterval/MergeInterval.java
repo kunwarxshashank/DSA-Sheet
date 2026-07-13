@@ -22,9 +22,9 @@ public class MergeInterval {
                 end1 = Math.max(end1, end2);
             }
         }
-        // last wali list update kro
+        // last wali list
         list.add(new int[]{start1, end1});
-        return list.toArray(new int[list.size()][]);
+        return list.toArray(new int[0][]);
     }
     public static void main(String[] args) {
         int arr[][] = {
@@ -35,6 +35,6 @@ public class MergeInterval {
         };
 
         int result[][] = MergeIt(arr);
-
+        System.out.println(Arrays.deepToString(result));
     }
 }
