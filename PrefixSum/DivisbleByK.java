@@ -11,6 +11,10 @@ public class DivisbleByK{
         
         for(int i=0; i<arr.length; i++){
             sum+=arr[i];
+
+            // if(sum%k==0) yaha pe hum ye isliye nahi use krte kyunki, isme subarray 0 se start hoga 
+            // sirf uske liye hai, balki subarr to khi se v start ho skta hai.
+
             int need = (sum%k);
 
             // Handle negative remainder
@@ -27,8 +31,8 @@ public class DivisbleByK{
     }    
 
     public static void main(String[] args) {
-        int arr[] = {4,6,2};
-        System.out.println(subarraysDivByK(arr, 5));
+        int arr[] = {1,2,3};
+        System.out.println(subarraysDivByK(arr, 3));
 
     }
 }
