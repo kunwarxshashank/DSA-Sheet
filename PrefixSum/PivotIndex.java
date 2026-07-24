@@ -16,10 +16,6 @@ public class PivotIndex {
             Suffix[i] = Suffix[i+1]+arr[i];
         }
         
-        
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(Suffix[3]);
-        }
 
 
         for (int i = 0; i < arr.length; i++) {
