@@ -5,7 +5,9 @@ public class IncrementDecrement{
         // System.out.println(x); 
         // System.out.println(y);
 
-        int x = 10;
-        System.out.println(x++);
+        // int x = 10;
+        // System.out.println(x++);
+        String word = "catdog";
+        System.out.println(word.substring(0,3));
     }
 }
