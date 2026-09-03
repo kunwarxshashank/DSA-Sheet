@@ -29,6 +29,8 @@ class PackageSystem{
         }
     }
 
+
+
     HashMap<Integer, Packet> map = new HashMap<>();
 
     void ADD(int pid, String sender, String reciever, String type, String destination){
@@ -38,12 +40,24 @@ class PackageSystem{
             return;
         }
 
+        Packet packet = new Packet(pid, sender, reciever, type, destination);
+
+        Node node = new Node(packet);
+
 
         if(type=="fragile"){
-            addFirst();
+            addFirst(node);
         }else{
-            addLast();
+            addLast(node);
         }
+    }
+
+    void addFirst(Node node){
+        
+    }
+
+    void addLast(Node node){
+
     }
 
 
